@@ -1,0 +1,299 @@
+#carousel {
+  height: 50svh;
+  padding-top: 1.5em;
+  position: flex;
+  /* overflow: hidden; */
+}
+
+.carousel-image {
+  display: flexbox;
+  height: 40svh;
+  border-radius: 7%;
+  box-shadow: #0005 0px 5px 15px;
+}
+
+#carousel-image-0 {
+  transform: /*translateX(-50%)*/ translateX(-120%) scale(0.6);
+  filter: brightness(40%);
+  z-index: 1;
+}
+#carousel-image-1 {
+  transform: /*translateX(-50%)*/ translateX(-80%) scale(0.8);
+  filter: brightness(65%);
+  opacity: 1;
+  z-index: 2;
+}
+#carousel-image-2 {
+  transform: /*translateX(-50%)*/ scale(1);
+  filter: brightness(100%);
+  opacity: 1;
+  z-index: 3;
+}
+#carousel-image-3 {
+  transform: /*translateX(-50%)*/ translateX(80%) scale(0.8);
+  filter: brightness(65%);
+  opacity: 1;
+  z-index: 2;
+}
+#carousel-image-4 {
+  transform: /*translateX(-50%)*/ translateX(120%) scale(0.6);
+  filter: brightness(40%);
+  opacity: 1;
+  z-index: 1;
+}
+#carousel-image-5 {
+  transform: /*translateX(-50%)*/ scale(1.5);
+  filter: brightness(40%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.mv0to5 {
+  animation: 0.3s ease-out mv0to5;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv5to4 {
+  animation: 0.3s ease-out mv5to4;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv4to3 {
+  animation: 0.3s ease-out mv4to3;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv3to2 {
+  animation: 0.3s ease-out mv3to2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv2to1 {
+  animation: 0.3s ease-out mv2to1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv1to0 {
+  animation: 0.3s ease-out mv1to0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv0to1 {
+  animation: 0.3s ease-out mv0to1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv1to2 {
+  animation: 0.3s ease-out mv1to2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv2to3 {
+  animation: 0.3s ease-out mv2to3;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv3to4 {
+  animation: 0.3s ease-out mv3to4;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv4to5 {
+  animation: 0.3s ease-out mv4to5;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mv5to0 {
+  animation: 0.3s ease-out mv5to0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mv0to5 {
+  0% {
+    transform: translateX(-50%) translateX(-120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes mv5to4 {
+  0% {
+    transform: translateX(-50%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 0;
+    z-index: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateX(120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+@keyframes mv4to3 {
+  0% {
+    transform: translateX(-50%) translateX(120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(-50%) translateX(80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes mv3to2 {
+  0% {
+    transform: translateX(-50%) translateX(80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+  30% {
+    opacity: 1;
+    z-index: 4;
+  }
+  100% {
+    transform: translateX(-50%) translateX(0%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 4;
+  }
+}
+@keyframes mv2to1 {
+  0% {
+    transform: translateX(-50%) translateX(0%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 4;
+  }
+  100% {
+    transform: translateX(-50%) translateX(-80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes mv1to0 {
+  0% {
+    transform: translateX(-50%) translateX(-80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(-50%) translateX(-120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+@keyframes mv0to1 {
+  0% {
+    transform: translateX(-50%) translateX(-120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(-50%) translateX(-80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes mv1to2 {
+  0% {
+    transform: translateX(-50%) translateX(-80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+  30% {
+    opacity: 1;
+    z-index: 4;
+  }
+  100% {
+    transform: translateX(-50%) translateX(0%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 4;
+  }
+}
+@keyframes mv2to3 {
+  0% {
+    transform: translateX(-50%) translateX(0%) scale(1);
+    filter: brightness(100%);
+    opacity: 1;
+    z-index: 4;
+  }
+  100% {
+    transform: translateX(-50%) translateX(80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes mv3to4 {
+  0% {
+    transform: translateX(-50%) translateX(80%) scale(0.8);
+    filter: brightness(65%);
+    opacity: 1;
+    z-index: 3;
+  }
+  100% {
+    transform: translateX(-50%) translateX(120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+@keyframes mv4to5 {
+  0% {
+    transform: translateX(-50%) translateX(120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes mv5to0 {
+  0% {
+    transform: translateX(-50%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 0;
+    z-index: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateX(-120%) scale(0.6);
+    filter: brightness(40%);
+    opacity: 1;
+    z-index: 2;
+  }
+}
